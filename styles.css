@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.calendar-header {
+    font-weight: bold;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.calendar-day {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.calendar-day.available {
+    background-color: #e6f3e6;
+}
+
+.calendar-day.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.calendar-day.unavailable {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.weather-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6f3ff;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .calendar-day {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .calendar-header {
+        font-size: 1em;
+    }
+
+    .weather-info {
+        font-size: 1em;
+    }
+}

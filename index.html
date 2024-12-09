@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler de Inmueble</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alquiler de Inmueble</h1>
+        <div id="imageCarousel" class="carousel">
+            <div class="carousel-container">
+                <img src="https://i.pinimg.com/originals/8c/9e/a7/8c9ea7db341e36c8b4f33218b60e7c67.jpg" alt="Imagen 1" class="carousel-image">
+                <img src="https://images.homify.com/c_fill,f_auto,h_700,q_auto/v1441009520/p/photo/image/665916/_MG_9970.jpg" alt="Imagen 2" class="carousel-image">
+                <img src="https://i.pinimg.com/originals/33/e2/7f/33e27fa75944b62e5fd09ce881bcf79f.jpg" alt="Imagen 3" class="carousel-image">
+            </div>
+            <button class="carousel-button prev">&lt;</button>
+            <button class="carousel-button next">&gt;</button>
+        </div>
+        <div id="calendar" class="calendar"></div>
+        <div id="weatherInfo" class="weather-info"></div>
+        <button id="bookButton" disabled>Reservar</button>
+    </div>
+    <script src="carousel.js"></script>
+    <script src="calendar.js"></script>
+    <script src="weather.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
